@@ -1,0 +1,10 @@
+.Comment {
+  margin-bottom: 24px;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-gap: 8px 0;
+  border: 1px solid currentcolor;
+  border-radius: 4px;
+  padding: 24px;
+}

@@ -1,0 +1,121 @@
+.TablePagination {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+.pageCount {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-800);
+  margin-right: 8px;
+}
+
+.item {
+  align-self: center;
+  display: flex;
+
+  &.disabled {
+    color: var(--color-gray);
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.button {
+  position: relative;
+  color: var(--color-gray-800);
+  align-self: center;
+  height: 32px;
+  width: 32px;
+  padding: 4px;
+  justify-content: center;
+  border-radius: 4px;
+
+  &.activeBtn {
+    background-color: var(--color-light);
+    cursor: default;
+    color: var(--color-default);
+  }
+
+  &:not(&.disabledBtn) {
+    &:hover {
+      background-color: var(--color-yellow-hover);
+      color: var(--color-default);
+    }
+  }
+
+  &.disabledBtn {
+    color: var(--color-gray);
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+    cursor: default;
+  }
+}
+
+.track {
+  gap: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  display: flex;
+  height: 100%;
+  z-index: 1;
+}
+
+.prev,
+.next,
+.prevToFirst,
+.nextToLast {
+  z-index: 2;
+  background-color: var(--color-white);
+
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 7px;
+    height: 13px;
+  }
+}
+
+.next,
+.nextToLast {
+  .icon {
+    transform: rotate(180deg);
+  }
+}
+
+.prevToFirst {
+  margin-right: 4px;
+
+  .icon {
+    transform: translateX(-2px);
+  }
+
+  .additionalIcon {
+    position: absolute;
+    left: 16px;
+  }
+}
+
+.nextToLast {
+  margin-left: 4px;
+  .icon {
+    transform: translateX(2px) rotate(180deg);
+  }
+
+  .additionalIcon {
+    position: absolute;
+    right: 16px;
+  }
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}

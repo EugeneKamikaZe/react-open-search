@@ -1,0 +1,51 @@
+{
+  "name": "react-open-search",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:vite": "vite",
+    "build:vite:dev": "vite preview --port 8080",
+    "build:vite:prod": "vite build",
+    "lint:ts": "eslint -c ./config/eslint/.eslintrc.js \"**/*.{ts,tsx}\"",
+    "lint:ts:quite": "eslint -c ./config/eslint/.eslintrc.js \"**/*.{ts,tsx}\" --quiet",
+    "lint:ts:fix": "eslint -c ./config/eslint/.eslintrc.js \"**/*.{ts,tsx}\" --fix --quiet",
+    "prettier:fix:css": "npx prettier --write **/*.{css,scss,sass,less}",
+    "prettier:fix:js": "npx prettier --write **/*.{js,jsx,mdx,ts,tsx}"
+  },
+  "dependencies": {
+    "@opensearch-project/opensearch": "^2.3.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tanstack/react-table": "^8.9.3",
+    "axios": "^1.5.0",
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-redux": "^7.1.26",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "@typescript-eslint/typescript-estree": "^6.4.1",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.49.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "3.0.2",
+    "prettier-plugin-css-order": "^2.0.0",
+    "sass": "^1.66.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-svgr": "^3.2.0"
+  }
+}

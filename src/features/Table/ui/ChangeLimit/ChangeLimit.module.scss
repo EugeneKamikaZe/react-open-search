@@ -1,0 +1,15 @@
+.ChangeLimit {
+  display: flex;
+  align-items: center;
+}
+
+.itemsCount {
+  font-size: var(--font-size-sm);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.border {
+  padding-left: 8px;
+  border-left: 1px solid var(--color-gray);
+}

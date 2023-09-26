@@ -1,0 +1,36 @@
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.primary,
+.secondary {
+  border-radius: 4px;
+  border: 1px solid currentcolor;
+  padding: 4px 16px;
+  font-weight: var(--font-weight-btns);
+  line-height: var(--font-line-headings);
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border 0.2s,
+    color 0.2s;
+}
+
+.primary {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+
+  &:hover {
+    background-color: var(--color-yellow-hover);
+  }
+}
+
+.secondary {
+  color: var(--color-default);
+  background-color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-gray);
+  }
+}
